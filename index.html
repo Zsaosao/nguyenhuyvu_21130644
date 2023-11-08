@@ -10,73 +10,22 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <header>
-            <div class="header_container">
-                <div class="logo">
-                    <svg
-                        width="152"
-                        height="52"
-                        viewBox="0 0 152 52"
-                        fill="none"
+        <header class="col-12 py-2">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img class="ps-5" src="assets/images/logo.svg" alt="logo" />
+                    <h3
+                        class="mb-0 ms-2 text_linearGradient fw-bold text-uppercase fs-5"
                     >
-                        <g filter="url(#filter0_d_11366_12729)">
-                            <rect
-                                x="5"
-                                y="5"
-                                width="42"
-                                height="42"
-                                rx="8.24808"
-                                fill="white"
-                            />
-                            <g clip-path="url(#clip0_11366_12729)">
-                                <path
-                                    d="M26.0063 13.1279L33.9999 17.2558V9L26.0063 13.1279Z"
-                                    fill="#FFB038"
-                                />
-                                <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M33.9999 17.2558L26.0063 21.3722V13.1279L33.9999 17.2558Z"
-                                    fill="#F86141"
-                                />
-                                <path
-                                    d="M18 25.5L26.0065 29.6278V21.3721L18 25.5Z"
-                                    fill="#F58E78"
-                                />
-                                <path
-                                    d="M18 17.2558L26.0065 21.3722V13.1279L18 17.2558Z"
-                                    fill="#4F2F8D"
-                                />
-                                <path
-                                    d="M26.0065 21.3717L18 25.4996V17.2554L26.0065 21.3717Z"
-                                    fill="#DF1722"
-                                />
-                                <path
-                                    d="M26.0063 29.6279L33.9999 33.7558V25.5L26.0063 29.6279Z"
-                                    fill="#BB1714"
-                                />
-                                <path
-                                    d="M33.9999 33.7553L26.0063 37.8832V29.6274L33.9999 33.7553Z"
-                                    fill="#ED3330"
-                                />
-                                <path
-                                    d="M33.9999 25.5L26.0063 29.6278V21.3721L33.9999 25.5Z"
-                                    fill="#ED3330"
-                                />
-                                <path
-                                    d="M18 33.7553L26.0065 37.8832V29.6274L18 33.7553Z"
-                                    fill="#9B85C5"
-                                />
-                                <path
-                                    d="M26.0065 37.8837L18 42.0001V33.7559L26.0065 37.8837Z"
-                                    fill="#4F2F8D"
-                                />
-                            </g>
-                        </g>
-                    </svg>
-                    <h3>Vũ</h3>
+                        Vu
+                    </h3>
                 </div>
                 <div class="navDiv">
                     <label for="menu">
@@ -88,21 +37,50 @@
                     <label for="menu">
                         <i class="fa-solid fa-xmark"></i>
                     </label>
-                    <li
-                        style="
-                            padding: 5px 20px;
-                            background-color: rgb(0, 0, 0);
-                            border-radius: 5px;
-                        "
-                    >
-                        <a style="color: aliceblue" href="#home">Home</a>
+                    <li>
+                        <a
+                            style="text-decoration: none; color: rgb(0, 0, 0)"
+                            href="#home"
+                            >Home</a
+                        >
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a
+                            s
+                            style="text-decoration: none; color: black"
+                            href="#skill"
+                            >Skill</a
+                        >
                     </li>
-                    <li><a href="#skill">Skill</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a
+                            s
+                            style="text-decoration: none; color: black"
+                            href="#project"
+                            >Project</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            style="text-decoration: none; color: black"
+                            href="#contact"
+                            >Contact</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            style="text-decoration: none; color: black"
+                            href="about.html"
+                            >About</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            style="text-decoration: none; color: black"
+                            href="requirement.html"
+                            >Lab4</a
+                        >
+                    </li>
                 </ul>
             </div>
         </header>
@@ -126,7 +104,13 @@
                     perfect design. I also make website more & more interactive
                     with web animations.
                 </p>
-                <button><a href="about.html">About me</a></button>
+                <button class="btn btn-primary">
+                    <a
+                        style="color: white; text-decoration: none"
+                        href="about.html"
+                        >About me</a
+                    >
+                </button>
             </div>
         </div>
 

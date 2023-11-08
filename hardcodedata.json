@@ -1,0 +1,37 @@
+{
+  "listBook": [
+    {
+      "title": "Cuốn sách 1",
+      "author": "Tác giả 1",
+      "publishingYear": 2020,
+      "price": 200000,
+      "quantity": 10,
+      "image":"assets/images/imgaenotavailable.png",
+      "id": 1
+    },
+    {
+      "title": "Cuốn sách 2",
+      "author": "Tác giả 2",
+      "publishingYear": 2022,
+      "price": 10000 ,
+      "quantity": 80 ,
+      "image":"assets/images/demo.png",
+      "id": 2
+
+    }
+    ,
+    {
+      "title": "Cuốn sách 3",
+      "author": "Tác giả 3",
+      "publishingYear": 2021,
+      "price": 10000 ,
+      "quantity": 80 ,
+      "image":"assets/images/demo.png",
+      "id": 4
+
+    }
+    
+
+    
+  ]
+}

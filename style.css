@@ -8,10 +8,7 @@ html {
     --box-shadow: 5px 5px 15px #c1c8d3, -5px -5px 15px #ffffff;
     --gradient-bg: linear-gradient(-45deg, #d000f7, #24bae3);
 }
-a {
-    color: #000000;
-    text-decoration: none;
-}
+
 a:hover {
     text-decoration: underline;
 }
@@ -25,8 +22,6 @@ body {
 header {
     position: fixed;
     top: 0;
-    width: calc(100% - 20px);
-    padding: 10px;
     border-bottom: 1px solid #dce1e4;
     background-color: white;
     z-index: 1;
@@ -66,7 +61,7 @@ header ul {
     align-items: center;
 }
 header ul li {
-    padding: 0 30px;
+    padding: 0 20px;
 }
 .container {
     width: 1200px;
@@ -74,7 +69,7 @@ header ul li {
     margin: auto;
 }
 .banner {
-    margin-top: 150px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 60% 40%;
     border-bottom: 1px solid #dce1e4;
@@ -342,9 +337,16 @@ header input {
     font-size: 1.5em;
     color: white;
 }
-.bannerIndex .bannerContent button {
-    padding: 10px 30px;
-    font-size: large;
-    font-weight: bold;
-    color: black;
+
+.text_linearGradient {
+    background: linear-gradient(38.91deg, #ff3d3d 39.17%, #5956ff 79.55%),
+        #141414;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
 }

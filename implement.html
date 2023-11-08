@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Implement</title>
+        <link rel="stylesheet" href="lab4css.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="p-2 h-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="navigation">
+                            <div class="navigation_logo">
+                                <img
+                                    src="
+                                assets/images/logo.svg"
+                                    alt="logo"
+                                />
+                                <h3
+                                    class="mb-0 ms-2 text_linearGradient fw-bold text-uppercase fs-5"
+                                >
+                                    Vu
+                                </h3>
+                            </div>
+                            <div class="navigation_menu">
+                                <ul class="mb-0">
+                                    <li>
+                                        <a href="requirement.html"
+                                            >Requirement</a
+                                        >
+                                    </li>
+                                    <li><a href="design.html">Design</a></li>
+                                    <li class="">
+                                        <a href="implement.html">Implement</a>
+                                    </li>
+                                    <li class="pe-0">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <article>
+            <h1 class="text-center fw-bold" style="color: black">Implement</h1>
+            <div class="search my-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-10 mb-2">
+                            <div class="search_input">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="search-input"
+                                    placeholder="Search by author name book title or id"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="search_button">
+                                <button
+                                    type="button"
+                                    style="font-size: 1rem"
+                                    id="search-button"
+                                    class="rounded btn d-flex justify-content-center align-items-center"
+                                >
+                                    <img
+                                        src="assets/images/icons8-search.gif"
+                                        alt=""
+                                        class="h-25 w-25 me-2"
+                                    />
+
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-12 list-unstyled align-items-center d-flex flex-wrap"
+                            id="search_list"
+                            style="
+                                overflow-y: scroll;
+                                height: 200px;
+                                justify-content: space-between;
+                                border: 1px solid black;
+                            "
+                        ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="addBook">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8">
+                            <form class="row">
+                                <div class="form-group col-12">
+                                    <label for="title">Title</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="title-input"
+                                        placeholder="Enter title"
+                                    />
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="author">Author</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="author-input"
+                                        placeholder="Enter author"
+                                    />
+                                </div>
+                                <div class="form-group col-6 mt-2">
+                                    <label for="publishingYear"
+                                        >Publishing year</label
+                                    >
+
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        id="publishingYear-input"
+                                        placeholder="Enter publishing year"
+                                    />
+                                </div>
+                                <div class="form-group col-6 mt-2">
+                                    <label for="Image">Image</label>
+                                    <input
+                                        type="file"
+                                        class="form-control"
+                                        id="image-input"
+                                    />
+                                </div>
+                                <div class="form-group col-6 mt-2">
+                                    <label for="price">Price</label>
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        id="price-input"
+                                        placeholder="Enter price"
+                                        min="0"
+                                    />
+                                </div>
+                                <div class="form-group col-6 mt-2">
+                                    <label for="quantity">Quantity</label>
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        id="quantity-input"
+                                        placeholder="Enter quantity"
+                                        min="0"
+                                    />
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <div
+                                        id="add-book"
+                                        class="btn btn-primary btn-sm"
+                                    >
+                                        Add book
+                                    </div>
+                                    <div
+                                        id="update-book"
+                                        class="btn btn-success btn-sm"
+                                        style="display: none"
+                                    >
+                                        Update book
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div
+                                        style="
+                                            height: 300px;
+                                            background-color: black;
+                                        "
+                                        class="d-flex justify-content-center align-items-center rounded overflow-hidden"
+                                    >
+                                        <img
+                                            class="object-fit-cover rounded d-block w-100 h-100"
+                                            id="image-preview"
+                                            src="assets/images/imgaenotavailable.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div class="mt-2" id="title-preview">
+                                    Tên quyển sách:
+                                </div>
+                                <div class="mt-2" id="author-preview">
+                                    Tên tác giả:
+                                </div>
+                                <div class="mt-2" id="publishingYear-preview">
+                                    Năm xuất bản:
+                                </div>
+                                <div class="mt-2" id="price-preview">
+                                    Giá bán:
+                                </div>
+                                <div class="mt-2" id="quantity-preview">
+                                    Số Lượng:
+                                </div>
+                                <div class="mt-2" id="id-preview">ID:</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="listBook mb-3">
+                <div
+                    class="container"
+                    style="
+                        border: 1px solid black;
+                        height: 350px;
+                        overflow-y: scroll;
+                    "
+                >
+                    <div class="row">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">id</th>
+                                    <th scope="col">title</th>
+                                    <th
+                                        class="displayNoneOnPhoneAndTablet"
+                                        scope="col"
+                                    >
+                                        author
+                                    </th>
+                                    <th
+                                        class="displayNoneOnPhoneAndTablet"
+                                        scope="col"
+                                    >
+                                        publishing year
+                                    </th>
+                                    <th scope="col">price</th>
+                                    <th scope="col">quantity</th>
+                                    <th class="displayNoneOnPhone" scope="col">
+                                        image
+                                    </th>
+                                    <th scope="col">edit</th>
+                                    <th scope="col">delete</th>
+                                </tr>
+                            </thead>
+                            <tbody id="list-book"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
